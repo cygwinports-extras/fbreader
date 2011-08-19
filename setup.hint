@@ -1,0 +1,4 @@
+category: Text
+requires: libbz2_1 libcurl4 libexpat1 libfribidi0 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libiconv2 liblinebreak2 libpango1.0_0 libsqlite3_0 libstdc++6 zlib0
+sdesc: "E-book reader"
+ldesc: "FBReader is an e-book reader for various platforms."

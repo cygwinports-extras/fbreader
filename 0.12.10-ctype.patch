@@ -1,0 +1,11 @@
+--- origsrc/fbreader-0.12.10/fbreader/src/formats/fb2/FB2Reader.h	2010-04-01 08:14:24.000000000 -0500
++++ src/fbreader-0.12.10/fbreader/src/formats/fb2/FB2Reader.h	2011-08-19 02:01:16.858583900 -0500
+@@ -22,6 +22,8 @@
+ 
+ #include <ZLXMLReader.h>
+ 
++#undef _P
++
+ class FB2Reader : public ZLXMLReader {
+ 
+ public:
