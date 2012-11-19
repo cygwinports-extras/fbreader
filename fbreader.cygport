@@ -1,0 +1,25 @@
+NAME="fbreader"
+VERSION=0.99.3
+RELEASE=1
+CATEGORY="Text"
+SUMMARY="E-book reader"
+DESCRIPTION="FBReader is an e-book reader for various platforms."
+HOMEPAGE="http://www.fbreader.org/"
+SRC_URI="http://www.fbreader.org/files/desktop/fbreader-sources-${PV}.tgz"
+
+PATCH_URI="0.12.10-ctype.patch
+	   0.12.10-libiconv.patch"
+
+MAKEOPTS="-j1 TARGET_ARCH=desktop TARGET_STATUS=release UI_TYPE=qt4 CCACHE= ZLSHARED=no"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cygmake do_install DESTDIR=${D}
+	dodoc CHANGES* fbreader/LICENSE
+}

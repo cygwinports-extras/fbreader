@@ -5,7 +5,7 @@
  LD = g++
  
 -CFLAGS = -pipe -fno-exceptions -Wall -Wno-ctor-dtor-privacy -W -DLIBICONV_PLUG
-+CFLAGS = -pipe -fno-exceptions -Wall -Wno-ctor-dtor-privacy -W
++CFLAGS += -pipe -fno-exceptions -Wall -Wno-ctor-dtor-privacy -W
  LDFLAGS =
  
  ifeq "$(UI_TYPE)" "qt"
